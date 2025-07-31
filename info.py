@@ -20,7 +20,7 @@ API_HASH = environ.get('API_HASH', 'e34d594cbce9a3d968ffb41a147e1a80')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Keep-Alive URL
-KEEP_ALIVE_URL = environ.get("KEEP_ALIVE_URL", "https://burning-brittney-leech2-3bc21fb5.koyeb.app/")  # <-- Add this line
+KEEP_ALIVE_URL = environ.get("KEEP_ALIVE_URL", "https://electrical-maybelle-dhyey-47ac2148.koyeb.app/")  # <-- Add this line
 #hyper link
 HYPER_MODE = bool(environ.get('HYPER_MODE', False))
 #request fsub
