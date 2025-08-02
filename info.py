@@ -15,8 +15,8 @@ def is_enabled(value, default):
 
 #Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21806330'))
-API_HASH = environ.get('API_HASH', 'e34d594cbce9a3d968ffb41a147e1a80')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 
 # Keep-Alive URL
@@ -41,12 +41,12 @@ DEFAULT_AUTH_CHANNELS = [int(x) for x in environ.get("AUTH_CHANNEL", "").split()
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dhyeystores:Dhyeyp8128@moviedb.xqxprvp.mongodb.net/?retryWrites=true&w=majority&appName=MOVIEDB")
-DATABASE_NAME = environ.get('DATABASE_NAME', "dhyeystores")
+DATABASE_URI = environ.get('DATABASE_URI', " ")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'MOVIEDB')
 
 # File Channel Settings
-FILE_CHANNELS = [int(ch) for ch in environ.get('FILE_CHANNELS', '-1002659186869').split()]
+FILE_CHANNELS = [int(ch) for ch in environ.get('FILE_CHANNELS', '-1002049234443 -1002869524451').split()]
 FILE_CHANNEL_SENDING_MODE = is_enabled(environ.get('FILE_CHANNEL_SENDING_MODE', 'True'), True)
 FILE_AUTO_DELETE_SECONDS = int(environ.get('FILE_AUTO_DELETE_SECONDS', 3600))  # Default: 1 hour
 
