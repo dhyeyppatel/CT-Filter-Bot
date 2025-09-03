@@ -214,7 +214,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if chat_type == enums.ChatType.PRIVATE:
             await query.message.reply_to_message.delete()
-            await query.message.delete()
+        
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
