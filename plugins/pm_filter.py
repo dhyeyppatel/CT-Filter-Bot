@@ -35,7 +35,7 @@ SPELL_CHECK = {}
 @Client.on_message(filters.group | filters.private & filters.text & filters.incoming) 
 async def give_filter(client, message):
     try:
-        await message.delete()
+        
     except Exception as e:
         logger.exception("Failed to delete message:", e)
 
